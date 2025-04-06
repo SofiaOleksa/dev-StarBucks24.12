@@ -1,4 +1,44 @@
 @media screen and (max-width: 1024px) {
+    .header {
+        padding: 34px 0;
+
+        .container{
+            gap: 0;
+        }
+         
+        &-nav {
+            gap: 25px;
+            flex-direction: column;
+            padding: 25px;
+            background: $bg-footer;
+            &__item {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .logo {
+        max-width: 114px;
+    }
+
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .mobile-container {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 88px;
+        width: 100%;
+    }
+
+    .footer {
+        .logo{
+            max-width: 134px;
+        }
+    }
 }
 
 

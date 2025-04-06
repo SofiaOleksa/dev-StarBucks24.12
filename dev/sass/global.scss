@@ -1,10 +1,49 @@
 html {
-    font-size: 16px;
-    font-family: 'Montserrat';
+    font-size: $font-size;
+    font-family: $font-primary;
+}
+
+body {
+    background-color: #121517;
+    color: $color-text;
+}
+
+section {
+    margin-bottom: $section-margin;
+}
+
+.logo {
+    max-width: 195px;
+}
+
+.container {
+    max-width: 1278px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.show {
+    display: block !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-flex {
+    display: flex !important;
 }
 
 
 ::selection {
-    color: #18361d;
-    background-color: #03fe2c72;
+    color: $primary-color;
+    background-color: $bg-footer;
 }
