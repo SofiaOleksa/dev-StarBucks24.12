@@ -1,15 +1,52 @@
 html {
     font-size: $font-size;
     font-family: $font-primary;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #121517;
     color: $color-text;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
     margin-bottom: $section-margin;
+}
+
+a {
+    color: $color-text;
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.btn-arrow{
+    --size: 87px;
+    --icon-size: 35px;
+    --border-radius: 29px;
+    --border-width: 3px;
+    width: calc(var(--size) - var(--border-width) * 2);
+    height: calc(var(--size) - var(--border-width) * 2);
+    border-radius: var(--border-radius);
+    background-color: $bg-footer;
+    position: relative;
+    @include flex-centered;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        border-radius: calc(var(--border-radius) + 1px);
+        width: calc(100% + var(--border-width));
+        height: calc(100% + var(--border-width));
+        top: 50%;
+        left: 50%;
+        background-image: $bg-gradient;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .logo {
@@ -24,8 +61,20 @@ section {
     margin-right: auto;
 }
 
+.text-gradient {
+    background-clip: text;
+    color: transparent;
+    background-image: $bg-gradient;
+}
 
 
+.icon-svg {
+    height: var(--icon-size);
+    width: var(--icon-size);
+}
+use {
+    width: 100%;
+}
 .show {
     display: block !important;
 }
@@ -40,6 +89,12 @@ section {
 
 .d-flex {
     display: flex !important;
+}
+
+.svg-sprite {
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
 
 
