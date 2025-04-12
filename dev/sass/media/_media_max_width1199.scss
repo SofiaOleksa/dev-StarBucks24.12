@@ -1,4 +1,30 @@
 @media screen and (max-width: 1199px) {
+    
+    .template-title {
+        max-width: 570px;
+        margin-bottom: 56px;
+        h1, h2 {
+            font-size: 64px;
+            margin-bottom: 48px;
+        }
+       
+        &.template-title_row, 
+        &.template-title_row-reverse {
+            max-width: 767px;
+            gap: 56px;
+            align-items: center;
+            
+            h1, h2, h6 {
+                min-width: 330px;
+                margin-bottom: 0;
+            }
+        }
+    
+        &.template-title_row-reverse {
+            flex-direction: row-reverse;
+        }
+    }
+
     .footer-nav {
         width: 700px;
     }

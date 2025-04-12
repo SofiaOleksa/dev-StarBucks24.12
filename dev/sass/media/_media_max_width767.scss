@@ -1,3 +1,48 @@
 @media screen and (max-width: 767px) {
+        section {
+            margin-bottom: $section-mobile-margin;
+        }
 
+        h6, .h6 {
+            font-size: 16px;
+        }
+
+        .btn,
+        .btn.btn-secondary {
+            font-size: 16px;
+            padding: 15.5px 35px;
+        }
+
+        .banner {
+            .btn-row {
+                margin-bottom: 36px;
+            }
+
+            &-advantage__title {
+                font-size: 42px;
+                margin-bottom: 4px;
+            }
+            &-advantage__description {
+                font-size: 14px;
+            }
+
+            &-advantage {
+                width: 82px;
+            }
+        }
+
+        .label {
+            --size: 82px;
+            
+            font-size: 18px;
+        
+            &.label_text-large {
+                font-size: 24px;
+            }
+        
+            &.label_sm {
+                --size: 82px;
+                font-size: 18px;
+            }
+        }
 }
