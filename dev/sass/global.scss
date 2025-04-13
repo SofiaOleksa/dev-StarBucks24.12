@@ -111,6 +111,7 @@ a {
 }
 
 .btn {
+    --icon-size: 28px;
     padding: 23px 53px;
     border-radius: 45px;
     display: inline-block;
@@ -255,6 +256,8 @@ a {
 
 
 .icon-svg {
+    vertical-align: middle;
+    top: -4px;
     height: var(--icon-size);
     width: var(--icon-size);
 }

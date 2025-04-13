@@ -1,0 +1,10 @@
+.we-make__video {
+    position: relative;
+    .btn {
+        @include transform-centered;
+        width: max-content;
+    }
+}
+
+
+
