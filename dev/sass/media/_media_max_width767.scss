@@ -45,4 +45,29 @@
                 font-size: 18px;
             }
         }
+
+        .advantages {
+            flex-direction: column;
+            max-width: 260px;
+            margin: 0 auto $section-mobile-margin;
+            padding: 32px 42px;
+            border-radius: 26px;
+        }
+        
+        .advantage {
+            &-img {
+                --size: 86px;
+                img {
+                    --size: 128px; 
+                }
+            }
+            &-title {
+                font-size: 22px;
+            }
+    
+            &-description {
+                line-height: 140%;
+                font-size: 14px;
+            }
+        }
 }

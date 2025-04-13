@@ -69,6 +69,26 @@
         }
     }
 
+    .advantages {
+        margin: 0 25px 100px;
+        padding: 36px 48px;
+    }
+
+    .advantage {
+        &-img {
+            --size: 120px;
+            img {
+                --size: 140px; 
+            }
+        }
+        &-title {
+            font-size: 28px;
+        }
+
+        &-description {
+            line-height: 140%;
+        }
+    }
 
     .template-title {
         margin-bottom: 36px;
