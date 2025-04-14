@@ -264,6 +264,11 @@ a {
 use {
     width: 100%;
 }
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .show {
     display: block !important;
 }

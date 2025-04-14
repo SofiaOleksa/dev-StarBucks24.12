@@ -1,0 +1,30 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.49);
+    backdrop-filter: blur(10px);
+    @include flex-centered;
+    display: none;
+}
+
+.modal-body {
+    background-color: #12151763;
+    max-width: 700px;
+    padding: 36px 24px;
+    position: relative;
+}
+
+.btn-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: url(./assets/img/close.svg) center no-repeat;
+    padding: 24px;
+    &:hover {
+        transform: rotate(180deg) scale(1.3);
+    }
+}
