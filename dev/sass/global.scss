@@ -241,7 +241,7 @@ a {
         height: var(--size);
         @include transform-centered;
         @include flex-centered;
-        transform: translate(-50%, -50%) rotate(-15deg);
+        transform: translate(-50%, -40%) rotate(-15deg);
     }
 
     &.label_text-large {
@@ -283,6 +283,16 @@ use {
 
 .d-flex {
     display: flex !important;
+}
+
+.hovered {
+    animation: 1s hovered infinite ease-in-out alternate;
+}
+
+@keyframes hovered {
+    to {
+        transform: scale(1.2);
+    }
 }
 
 .svg-sprite {
