@@ -2,6 +2,12 @@ html {
     font-size: $font-size;
     font-family: $font-primary;
     scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar { 
+        width: 0px;
+        background:  $bg-body;
+    }
 }
 
 body {
