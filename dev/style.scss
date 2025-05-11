@@ -13,6 +13,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 @import "sass/variables";
+@import "sass/z-index";
 @import "sass/global";
 @import "sass/fonts";
 @import "sass/header";
@@ -23,6 +24,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "sass/modals";
 @import "sass/videoplayer";
 @import "sass/product-slider";
-@import "sass/z-index";
+@import "sass/events";
 @import "sass/footer";
 @import "sass/media/media";
