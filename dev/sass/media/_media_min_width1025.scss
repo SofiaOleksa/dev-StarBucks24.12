@@ -25,6 +25,33 @@
     .swiper-button-prev {
         left: -88px;
     }
+
+    .events-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+        
+    .event:nth-child(5n+1) { 
+        max-width: calc(50% - var(--gap));
+    }
+    
+    .event:nth-child(5n+2) { 
+        max-width: calc(50% - var(--gap));
+    }
+    
+    .event:nth-child(5n+3) { 
+        max-width: calc(33.33% - var(--gap)); 
+    }
+    
+    .event:nth-child(5n+4) { 
+        max-width: calc(33.33% - var(--gap));  
+    }
+    
+    .event:nth-child(5n+5) { 
+        max-width: calc(33.33% - var(--gap)); 
+    }
+    
+    
 }
 
 
