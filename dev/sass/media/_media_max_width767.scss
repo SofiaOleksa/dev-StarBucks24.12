@@ -13,7 +13,39 @@
             padding: 15.5px 35px;
         }
 
+        
+
         .banner {
+
+            &-image {
+                max-width: 271px;
+                position: relative;
+    
+                &::before {
+                    left: 60%;
+                    top: 75%;
+                    width: 400px;
+                    height: 300px;
+                    background: url(./assets/img/template-decoration-stripes.png) center / contain no-repeat;
+                }
+    
+                &::after {
+                    left: 40%;
+                    top: 40%;
+                    width: 600px;
+                    height: 600px;
+                    background: url(./assets/img/template-decoration-green.png) center no-repeat;
+                }
+    
+                .label {
+                    &::after {
+                        left: 0%;
+                        top: 0%;
+                        width: 0px;
+                        height: 0px;
+                    }
+                }
+            }
             .btn-row {
                 margin-bottom: 36px;
             }
@@ -55,6 +87,15 @@
         }
         
         .advantage {
+
+            &::after {
+                content: "";
+                left: 0%;
+                top: 0%;
+                width: 0px;
+                height: 0px;
+            }
+
             &-img {
                 --size: 86px;
                 img {
@@ -70,4 +111,76 @@
                 font-size: 14px;
             }
         }
+
+        .template-content {
+            flex-direction: column;
+            --translate-y: 12px;
+            --translate-x: 16px;
+
+            &.column-reverso {
+                flex-direction: column-reverse;
+                align-items: flex-end;
+            }
+    
+            &__img-box {
+                max-width: 163px;
+                margin-bottom: 36px;
+
+                &.reflection {
+                    flex-direction: column;
+                    --translate-y: 12px;
+                    --translate-x: 16px;
+
+                    &::after {
+                        transform: rotate(40deg);
+                        left: -140%;
+                        top: 0%;
+                        width: 450px;
+                        height: 280px;
+                        background: url(./assets/img/template-decoration-stripes.png) center / contain no-repeat;
+                    }
+            
+                    .label {
+                        top: 0px;
+                        left: 0px;
+                    }
+                } 
+            }
+        }
+
+            
+
+           
+
+        .we-make__video {
+            width: 255px;
+            height: 163px;
+        
+            &::before {
+                width: 476px;
+                height: 304px;
+                transform: rotateY(180deg) rotate(35deg);
+                left: -20%;
+                top: -350%;
+                background: url(./assets/img/template-decoration-stripes.png) center / contain no-repeat;
+            }
+        }
+        .contact-item {
+            font-size: 22px;
+        }
+
+        .template-title {
+        &.template-title_row,
+        &.template-title_row-reverse {
+        flex-direction: column;
+        align-items: flex-start;
+
+    } 
+    }
+
+    .text-gradient {
+        .d-block{
+            display: block;
+        }
+      }
 }

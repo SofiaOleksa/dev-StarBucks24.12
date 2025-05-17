@@ -1,6 +1,7 @@
 .we-make__video {
     position: relative;
 
+
     &::before {
         content: "";
         @include transform-centered;
@@ -29,6 +30,8 @@
         width: max-content;
     }
 }
+
+
 
 
 

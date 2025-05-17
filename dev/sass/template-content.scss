@@ -22,8 +22,16 @@
             background: url(./assets/img/template-decoration-green.png) center no-repeat;
         } 
 
-       
-
+        &::after {
+            content: "";
+            @include transform-centered;
+            left: 5%;
+            top: 80%;
+            z-index: -1;
+            width: 600px;
+            height: 600px;
+            background: url(./assets/img/template-decoration-green.png) center no-repeat;
+        } 
         img {
             transform: translate(var(--translate-x), calc(var(--translate-y) * -1) );
             // clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
@@ -48,49 +56,48 @@
             mask: url(./assets/img/we-make___bg.svg) no-repeat;
     
         }
+
+        &.reflection {
+            
+            &::after {
+                content: "";
+                @include transform-centered;
+                transform: rotate(10deg);
+                left: -70%;
+                top: 30%;
+                z-index: -1;
+                width: 910px;
+                height: 680px;
+                background: url(./assets/img/template-decoration-stripes.png) center no-repeat;
+            }
+            img {
+                transform: translate(calc(var(--translate-x) * -1), calc(var(--translate-y) * -1) );
+                // clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+                mask: url(./assets/img/we-make___clip-right.svg) no-repeat;
+            }
+        
+            .label {
+                position: absolute;
+                top: -40px;
+                left: -80px;
+                z-index: 1;
+            }
+        
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: $primary-color;
+                top: 0px;
+                right: 0px;
+                mask: url(./assets/img/we-make___clip-right.svg) no-repeat;
+        
+            }
+        }
     }
 
-    &__img-box-reflection {
-        position: relative;
-        max-width: 465px;
-        width: 100%;
-        padding: 35px;
-
-        &::after {
-            content: "";
-            @include transform-centered;
-            transform: rotate(10deg);
-            left: -30%;
-            top: 30%;
-            z-index: -1;
-            width: 910px;
-            height: 680px;
-            background: url(./assets/img/template-decoration-stripes.png) center no-repeat;
-        }
-        img {
-            transform: translate(var(--translate-x), calc(var(--translate-y) * -1) );
-            // clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-            mask: url(./assets/img/we-make___clip-right.svg) no-repeat;
-        }
     
-        .label {
-            position: absolute;
-            top: -35px;
-            z-index: 1;
-        }
-    
-        &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: $primary-color;
-            top: 27px;
-            right: -114px;
-            mask: url(./assets/img/we-make___clip-right.svg) no-repeat;
-    
-        }
-    }
 
     &__info-box {
         max-width: 457px;
