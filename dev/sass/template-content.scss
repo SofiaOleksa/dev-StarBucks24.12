@@ -36,6 +36,36 @@
         }
     }
 
+    &__img-box-reflection {
+        position: relative;
+        max-width: 465px;
+        width: 100%;
+        padding: 35px;
+        img {
+            transform: translate(var(--translate-x), calc(var(--translate-y) * -1) );
+            // clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+            mask: url(./assets/img/we-make___clip-right.svg) no-repeat;
+        }
+    
+        .label {
+            position: absolute;
+            top: -35px;
+            z-index: 1;
+        }
+    
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $primary-color;
+            top: 27px;
+            right: -114px;
+            mask: url(./assets/img/we-make___clip-right.svg) no-repeat;
+    
+        }
+    }
+
     &__info-box {
         max-width: 457px;
         width: 100%;
