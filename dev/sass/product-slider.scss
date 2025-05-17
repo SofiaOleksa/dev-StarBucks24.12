@@ -3,11 +3,32 @@
     position: relative;
     margin: 0 auto;
     width: 278px;
+
+    &::after {
+        content: "";
+        @include transform-centered;
+        left: 10%;
+        top: 70%;
+        z-index: -1;
+        width: 600px;
+        height: 600px;
+        background: url(./assets/img/template-decoration-white.png) center no-repeat;
+    } 
+    &::before {
+        content: "";
+        @include transform-centered;
+        left: 65%;
+        top: 60%;
+        z-index: -1;
+        width: 600px;
+        height: 600px;
+        background: url(./assets/img/template-decoration-green.png) center no-repeat;
+    }
 }
 
 
 .swiper-slide-active .product {
-    border-color: $secondary-color;
+    border-color: $secondary-color;  
 }
 
 .product {
@@ -19,6 +40,8 @@
     flex-direction: column;
     align-items: center;
     max-width: 277px;
+
+   
 
     &__img-box {
         --size: 186px;

@@ -10,4 +10,39 @@
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 28px;
+
+    &::after {
+        content: "";
+        @include transform-centered;
+        left: 90%;
+        top: 120%;
+        z-index: -1;
+        width: 600px;
+        height: 450px;
+        background: url(./assets/img/template-decoration-white.png) center no-repeat;
+    }
+}
+
+.contacts-list {
+    &::after {
+        content: "";
+        @include transform-centered;
+        left: 20%;
+        top: 35%;
+        z-index: -1;
+        width: 600px;
+        height: 600px;
+        background: url(./assets/img/template-decoration-green.png) center no-repeat;
+    }
+
+    &::before {
+        content: "";
+        @include transform-centered;
+        left: 65%;
+        top: 25%;
+        z-index: -1;
+        width: 600px;
+        height: 600px;
+        background: url(./assets/img/template-decoration-green.png) center no-repeat;
+    }
 }

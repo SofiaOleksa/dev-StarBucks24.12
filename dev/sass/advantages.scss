@@ -14,12 +14,35 @@
         position: absolute;
         top: -42px;
         left: -42px;
+
+        
+
+        &::after {
+            content: "";
+            @include transform-centered;
+            left: 20%;
+            top: 150%;
+            z-index: -3;
+            width: 910px;
+            height: 680px;
+            background: url(./assets/img/template-decoration-green.png) center no-repeat;
+        }
     }
 }
 
 .advantage {
    
     text-align: center;
+    &::after {
+        content: "";
+        @include transform-centered;
+        left: 90%;
+        top: 70%;
+        z-index: -1;
+        width: 910px;
+        height: 680px;
+        background: url(./assets/img/template-decoration-white.png) center no-repeat;
+    }
 
     &-img {
         --size: 148px;

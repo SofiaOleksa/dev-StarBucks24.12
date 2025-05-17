@@ -73,7 +73,8 @@
     position: relative;
         &::before {
             content: "";
-            @include transform-centered;left: 50%;
+            @include transform-centered;
+            left: 50%;
             top: 70%;
             width: 270px;
             height: 110px;

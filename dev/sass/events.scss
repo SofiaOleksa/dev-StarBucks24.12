@@ -2,9 +2,30 @@
     .swiper {
         --gap: 24px;
         margin: 0 calc(var(--gap / 2) * -1);
+
+        &::after {
+            content: "";
+            @include transform-centered;
+            left: 65%;
+            top: 50%;
+            z-index: -1;
+            width: 600px;
+            height: 600px;
+            background: url(./assets/img/template-decoration-green.png) center no-repeat;
+        }
+
+        &::before {
+            content: "";
+            @include transform-centered;
+            left: 25%;
+            top: 40%;
+            z-index: -1;
+            width: 600px;
+            height: 300px;
+            background: url(./assets/img/template-decoration-white.png) center no-repeat;
+        }
     }
 }
-
 
 
 .event {
